@@ -22,6 +22,15 @@ namespace PizzaBuilder {
         protected global::System.Web.UI.HtmlControls.HtmlForm frmPizzaBuilder;
         
         /// <summary>
+        /// lblReceipt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblReceipt;
+        
+        /// <summary>
         /// lblEnterName control.
         /// </summary>
         /// <remarks>
@@ -92,15 +101,6 @@ namespace PizzaBuilder {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPickupOrDeliveryDisplay;
-        
-        /// <summary>
-        /// lblReceipt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblReceipt;
         
         /// <summary>
         /// lblSizeSelection control.

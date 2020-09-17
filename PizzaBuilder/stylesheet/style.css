@@ -1,29 +1,60 @@
 ﻿#orderTable {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    font-size: 36px;
 }
 
 #orderTable td, #orderTable th {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 20px;
+    border-width: thick;
+    border-color: #66ff00;
+}
+
+#orderTable tr {
+    background-color: #00c4de;
+}
+
+    #orderTable tr:hover {
+        background-color: #0089de;
+    }
+
+#orderTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+body {
+    background-color: #510061;
+}
+
+.button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #66ff00;
+    border: solid 1px transparent;
+    color: #510061;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
 
 }
 
-    #orderTable tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
+.textbox {
+    position: relative;
+    font-size: 48px;
+    text-align: center;
+}
 
-    #orderTable tr:hover {
-        background-color: #ddd;
-    }
-
-    #orderTable th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #4CAF50;
-        color: white;
-    }
-
-
+.dropdown {
+    font-size: 36px;
+}
