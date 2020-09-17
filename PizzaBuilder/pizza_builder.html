@@ -11,10 +11,39 @@
     <meta charset="utf-8" />
     <title>Your Pizza Order</title>
     <link rel="stylesheet" href="stylesheet/style.css" type="text/css">
+    
+    <script>
+        function validate() {
+            // string vars from html
+            let name = document.forms["frmPizzaBuilder"]["txtName"].value;
+            let phone = document.forms["frmPizzaBuilder"]["txtPhoneNumber"].value;
+            let tip = document.forms["frmPizzaBuilder"]["txtTip"].value;
+
+            // name can't be blank
+            if (name == " ") {
+                alert("Enter name.");
+                return false;
+            }
+            // phone has to be a num and 10 digits long and not empty
+            if (isNaN(phone) || phone.length != 10 || phone == "          ") {
+                alert("Enter phone number.");
+                return false;
+            }
+            if (tip < 0) {
+                alert("Tip can't be negative.");
+                return false;
+            }
+            else {
+                return true;
+            }
+
+        }
+    </script>
+
 </head>
 <body>
 
-    <FORM id="frmPizzaBuilder" method="post" action="PizzaBuilder.aspx">
+    <FORM id="frmPizzaBuilder" method="post" action="PizzaBuilder.aspx" onsubmit="return validate()">
 
         <table id="orderTable">
             <tr>
