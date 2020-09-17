@@ -1,0 +1,189 @@
+﻿<!--
+    Andrew Larkins
+    09/07/20
+    CIS3342-1
+    Pizza Builder Project - html entry page
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Your Pizza Order</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+
+    <FORM id="frmPizzaBuilder" method="post" action="PizzaBuilder.aspx">
+
+        <!--
+        <h1>
+        Za
+        </h1>
+        <img src="pics/pine_za.jpg" alt="pine" />
+        <img src="pics/fries.jpg" alt="fries" />
+        -->
+
+        <table id="orderTable">
+            <tr>
+                <td>
+                    Enter Name:
+                </td>
+                <td>
+                    <input name="txtName" type="text" required="" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Enter Phone Number:
+                </td>
+                <td>
+                    <input name="txtPhoneNumber" type="text" required="" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Enter Address:
+                </td>
+                <td>
+                    <input name="txtAddress" type="text" required="" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Enter Order Method:
+                </td>
+                <td>
+                    Pickup<input value="Pickup" type="radio" name="serviceType">
+                    Delivery<input value="Delivery" type="radio" name="serviceType">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Select Pizza Size:
+                </td>
+                <td>
+                    <select name="pizzaSize" required="">
+                        <option value="Personal">Personal Pizza $6.50</option>
+                        <option value="Small">Small Pizza $8.95</option>
+                        <option value="Medium">Medium Pizza $9.95</option>
+                        <option value="Large">Large Pizza $10.95</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Select Pizza Crust:
+                </td>
+                <td>
+                    <select name="pizzaCrust" required="">
+                        <option value="Regular">Regular Crust</option>
+                        <option value="Thick">Thick Crust</option>
+                        <option value="Thin">Thin Crust</option>
+                        <option value="Extra Garlic & Butter Crust">Extra Garlic and Butter Crust</option>
+                        <option value="Cheesy Stuffed Crust">Cheesy Stuffed Crust</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Select Pizza Sauce:
+                </td>
+                <td>
+                    Red Sauce<input value="Red" type="radio" name="sauceType">
+                    White Sauce<input value="White" type="radio" name="sauceType">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Select Toppings ($1.50 each):</p>
+                    Pepperoni<input value="Pepperoni" type="checkbox" name="toppings" />
+                    <br />
+                    Sausage<input value="Sausage" type="checkbox" name="toppings" />
+                    <br />
+                    Bacon<input value="Bacon" type="checkbox" name="toppings" />
+                    <br />
+                    Ham<input value="Ham" type="checkbox" name="toppings" />
+                    <br />
+                    Onions<input value="Onions" type="checkbox" name="toppings" />
+                    <br />
+                    Peppers<input value="Peppers" type="checkbox" name="toppings" />
+                    <br />
+                    Pineapple<input value="Pineapple" type="checkbox" name="toppings" />
+                    <br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Select Premium Toppings ($2.50 each):</p>
+                    Extra Cheese<input value="Extra Cheese" type="checkbox" name="premiumToppings" />
+                    <br />
+                    Extra Sauce<input value="Extra Sauce" type="checkbox" name="premiumToppings" />
+                    <br />
+                    Extra Meat<input value="Extra Meat" type="checkbox" name="premiumToppings" />
+                    <br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Select A Side Order:
+                </td>
+                <td>
+                    <select name="sideOrder" required="">
+                        <option value="None">None</option>
+                        <option value="French Fries - Small">French Fries - Small</option>
+                        <option value="French Fries - Large">French Fries - Large</option>
+                        <option value="8 Piece Buffalo Wings">8 Piece Buffalo Wings</option>
+                        <option value="12 Piece Buffalo Wings">12 Piece Buffalo Wings</option>
+                        <option value="8 Piece Spicy Nugs">8 Piece Spicy Nugs</option>
+                        <option value="12 Piece Spicy Nugs">12 Piece Spicy Nugs</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Select A 2 Liter Soda:
+                </td>
+                <td>
+                    <select name="sodaOrder" required="">
+                        <option value="None">None</option>
+                        <option value="Coke">Coke</option>
+                        <option value="Dr. Pepper">Dr. Pepper</option>
+                        <option value="Mountain Dew">Mountain Dew</option>
+                        <option value="Iced Tea">Iced Tea</option>
+                        <option value="Root Beer">Root Beer</option>
+                        <option value="Sprite">Sprite</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Would you like to leave a tip?</p>
+                    <input name="txtTip" type="text" />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+
+
+
+        </table>
+    </FORM>
+
+</body>
+</html>
